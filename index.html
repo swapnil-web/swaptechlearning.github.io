@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" type="image/icon" href="images/reg.ico">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<style type="text/css">
+		
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+	</style>
+   <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 70%;
+  }
+              body{
+                font-family: century gothic;
+                //  background: linear-gradient(to bottom, #ffbf00 0%, #ffffff 1%);
+                font-size: 15px;
+            }
+            .spansp{
+                color: tomato;
+                letter-spacing: 10px;
+                text-decoration-style: solid;
+            }
+            #grad {
+                background: linear-gradient(to bottom, #ffffff 0%, #ffbf00 107%);
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey; 
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: tomato; 
+                border-radius: 3px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #ffbf00; 
+            }
+
+            .sp {
+                padding: 30px;
+
+            }
+            a{
+                color: black;
+            }
+
+            #marque
+            {
+              background-color: black;
+              color: white;
+            }
+
+            /* scrolling bar */
+            #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+  </style>
+
+   <style>
+     .sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+    
+#email
+{
+        text-align: right;
+        text-decoration: none;
+}
+
+
+        </style>
+
+</head>
+<body onload="myfunction();">
+  <script>
+    function myfunction()
+    {
+      alert("thank you for visiting web site");
+    }
+  </script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Swap Tech Learning...</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+      
+
+        <li class="nav-item active">
+        <a class="nav-link" href="videot.html">Video Tutorial</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#aboutus">About US</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#contactus">Contact US</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Tutorial</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <img src="images/facebook-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>Facebook</a></p>
+        </li>
+       
+        <li>
+            <img src="images/gplus-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>Google+</a></p>
+        </li>
+        <li>
+            <img src="images/linkedin-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>LinkedIn</a></p>
+        </li>
+        <li>
+            <img src="images/youtube-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>YouYube</a></p>
+        </li>
+       
+    </ul>
+</div>
+
+<!-- <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+</script>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Home</title>
+
+</head>
+<body>
+	
+
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/img1.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/img2.jpeg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/img1.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</headr>
+	
+</header><!-- /header -->
+<br>
+<section id="marque">
+  <div class="container-fluid">
+
+    <marquee onmouseover="this.stop();" onmouseout="this.start();"><h2>Swap Tech Larning...</h2></marquee>
+  </div>
+</section>
+
+
+<section id="aboutus">
+	<div class="container-fluid">
+	<h2 class="text-lg-center pt-5">About us </h2>
+	<hr class="w-25 mx-auto text-success pb-5">
+
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-12"> 
+
+            <img src="images/img1.jpg" class="img-fluid" alt="">
+		</div>
+		<div class="col-lg-6 col-md-6 col-12"> 
+ 			<h1 class="text-center">Who I am?</h1>
+		    <hr>
+		    <p> 
+
+		    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facilis inventore sapiente corporis mollitia. Ab aliquam illo nulla, ipsum suscipit cupiditate. Expedita nesciunt, quod deserunt enim earum eaque neque, maiores.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iste, ad deleniti sit quasi cupiditate dicta quos ex neque sint cumque inventore laudantium doloribus optio dolore, saepe voluptas odit debitis?
+		    </p>
+  
+		</div>
+
+	</div>
+</div>
+</section>
+
+<section>
+<div class="container-fluid">
+	<h2 class="text-lg-center pt-5">Services </h2>
+	<hr class="w-25 mx-auto text-success pb-5">
+
+
+  <div class="row text-center mb-2">
+  	<div class="col-lg-4 col-md-4 col-12"> 
+<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">swap</h4>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde labore aperiam, ab! Possimus error reiciendis quidem consequuntur eos quis, omnis officiis, perferendis maxime deserunt eius, minima voluptatem culpa quos voluptatum.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+  	</div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img1.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">swap</h4>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde labore aperiam, ab! Possimus error reiciendis quidem consequuntur eos quis, omnis officiis, perferendis maxime deserunt eius, minima voluptatem culpa quos voluptatum.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div> 
+</div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">swap</h4>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde labore aperiam, ab! Possimus error reiciendis quidem consequuntur eos quis, omnis officiis, perferendis maxime deserunt eius, minima voluptatem culpa quos voluptatum.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div> 
+</div>
+
+  	</div>
+	</div>
+
+</section>
+
+<section class="bg-primary py-5 text-center text-white">
+	<article>
+		<h1 >1111111111</h1>
+		<p>If you Have any Query Call ME...!</p>
+		<button type="submit" class="btn btn-warning">Contact Me</button>
+		
+	</article>
+
+
+</section>
+
+<section id="contactus">
+	<div class="container-fluid">
+	<h2 class="text-lg-center pt-5">Contact Us </h2>
+	<hr class="w-25 mx-auto text-success pb-5">
+
+<div class="">
+	<div class="row">
+	<div class="col-lg-4 col-md-4 col-12">
+
+
+
+	</div>
+
+	<div class="col-lg-8 col-md-8 col-12 mb-5">
+    <form action="" method="">
+	  <div class="form-group ">
+      <label for="usr">Full Name:</label>
+      <input type="text" class="form-control" id="" name="name">
+    </div>
+      <div class="form-group">
+      <label for="usr">Contact No.:</label>
+      <input type="text" class="form-control" id="" name="contact">
+    </div>
+      <div class="form-group">
+      <label for="usr">Email</label>
+      <input type="email" class="form-control" id="" name="email">
+    </div>
+    <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="4" id="comment"></textarea>
+</div>
+<input type="submit" value="Submit"  class="btn btn-info">
+</form>
+	</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+	<div class="container-fluid">
+		<div class="col-lg-12 col-md-12 col-12 bg-success">
+			<div class="text-center">
+				design by:swap tech learning  <br>
+				&copy; All Right reserve
+			</div>
+		</div>
+	</div>
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

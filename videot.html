@@ -1,0 +1,547 @@
+<?php
+include('header.php'); 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" type="image/icon" href="images/reg.ico">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</style>
+	<title>video tutorial</title>
+
+	<style type="text/css" media="screen">
+		  body{
+              
+                //  background: linear-gradient(to bottom, #ffbf00 0%, #ffffff 1%);
+                font-size: 15px;
+            }
+
+
+            .spansp{
+                color: tomato;
+                letter-spacing: 10px;
+                text-decoration-style: solid;
+            }
+            #grad {
+                background: linear-gradient(to bottom, #ffffff 0%, #ffbf00 107%);
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey; 
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: tomato; 
+                border-radius: 3px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #ffbf00; 
+            }
+
+            .sp {
+                padding: 30px;
+
+            }
+            a{
+                color: black;
+            }
+
+             #s
+             {
+              color:white;
+              background-color: skyblue;
+             }
+             #s:hover
+             {
+              color: white;
+              background-color: black;
+             }
+
+.btn
+{
+  background-color: black;
+}
+
+   #marque
+            {
+              background-color: black;
+              color: white;
+            }
+
+	</style>
+  <style type="text/css">
+    
+    *
+    {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  </style>
+   <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 70%;
+  }
+              body{
+                font-family: century gothic;
+                //  background: linear-gradient(to bottom, #ffbf00 0%, #ffffff 1%);
+                font-size: 15px;
+            }
+            .spansp{
+                color: tomato;
+                letter-spacing: 10px;
+                text-decoration-style: solid;
+            }
+            #grad {
+                background: linear-gradient(to bottom, #ffffff 0%, #ffbf00 107%);
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey; 
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: tomato; 
+                border-radius: 3px;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #ffbf00; 
+            }
+
+            .sp {
+                padding: 30px;
+
+            }
+            a{
+                color: black;
+            }
+
+            /* scrolling bar */
+            #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+#dropdown
+{
+  color: white;
+}
+
+
+  </style>
+
+   <style>
+     .sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+    
+#email
+{
+        text-align: right;
+        text-decoration: none;
+}
+
+
+        </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Swap Tech Learning</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home<span class="sr-only">(current)</span></a>
+      </li>
+     
+      
+
+        <li class="nav-item active">
+        <a class="nav-link" href="videot.html">Video Tutorial</a>
+      </li>
+
+      <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdown" href="#">More</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">PHP</a>
+      <a class="dropdown-item" href="#">HTML</a>
+      <a class="dropdown-item" href="#">CSS</a>
+    </div>
+  </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <img src="images/facebook-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>Facebook</a></p>
+        </li>
+       
+        <li>
+            <img src="images/gplus-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>Google+</a></p>
+        </li>
+        <li>
+            <img src="images/linkedin-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>LinkedIn</a></p>
+        </li>
+        <li>
+            <img src="images/youtube-circle.png" width="32" height="32">
+            <p><a href="#" target="_blank"><br>YouYube</a></p>
+        </li>
+       
+    </ul>
+</div>
+
+</head>
+<body>
+
+<section id="marque">
+  <div class="container-fluid">
+
+    <marquee onmouseover="this.stop();" onmouseout="this.start();"><h2>Swap Tech Larning...</h2></marquee>
+  </div>
+</section>
+
+
+<div class="container mt-10">
+  <h2>Video Tutorial</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link " id="s" data-toggle="tab" href="#csharp">C#</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="s" class="nevv" data-toggle="tab" href="#php">PHP</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="s" class="nevv" data-toggle="tab" href="#html">HTML</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="s" class="nevv" data-toggle="tab" href="#laravel">laravel</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="cshart" class="container tab-pane active"><br>
+      <h3>C# Video</h3>
+     
+
+<div class="row text-center mb-2">
+  	<div class="col-lg-4 col-md-4 col-12 pb-5"> 
+<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">How to display current Date and Time on Label on window form in c#</h4>
+    <p class="card-text"> In this video show you how to display current date and time on window form in C# Language.</p>
+    <a href="#" target="_blank"  class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+  	</div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Accept Number in Text Box in C#</h4>
+    <p class="card-text"> In this video I am show you text box validation in C#. Enter Number only in text Box.
+Thank you for watching...............</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div> </div>
+
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text">hello I am swapnil sawant.  in this video I am show you text Box validation. Enter only less than 100 number  in C#  language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+
+ <div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text">  in this video I am show you text Box validation. Enter only less than 100 number  in C#  language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+
+
+ <div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text">  in this video I am show you text Box validation. Enter only less than 100 number  in C#  language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+
+
+ <div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text">hello I am swapnil sawant.  in this video I am show you text Box validation. Enter only less than 100 number  in C#  language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+
+</div>
+
+    </div>
+    <div id="php" class="container tab-pane fade"><br>
+      <h3>PHP Video</h3>
+     
+<div class="row text-center mb-2">
+  	<div class="col-lg-4 col-md-4 col-12"> 
+<div class="card">
+  <img class="card-img-top" src="images/php.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">this is php video</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+  	</div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/php.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Accept Number in Text Box in php</h4>
+    <p class="card-text">In this video I am show you text box validation in C#. Enter Number only in text Box.
+Thank you for watching...............</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div> </div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/img2.jpeg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text">  in this video I am show you text Box validation. Enter only less than 100 number  in C#  language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+</div>
+
+
+    </div>
+    <div id="html" class="container tab-pane fade"><br>
+      <h3>HTML Video</h3>
+    <div class="row text-center mb-2">
+  	<div class="col-lg-4 col-md-4 col-12"> 
+<div class="card">
+  <img class="card-img-top" src="images/html.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">How to display current Date and Time on Label on window form in c#</h4>
+    <p class="card-text"> In this video show you how to display current date and time on window form in C# Language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+  	</div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/html.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Accept Number in Text Box in C#</h4>
+    <p class="card-text"> In this video I am show you text box validation in C#. Enter Number only in text Box.
+Thank you for watching...............</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div> </div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/html.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text">  in this video I am show you text Box validation. Enter only less than 100 number  in C#  language.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+</div>
+
+    </div>
+
+    <div id="laravel" class="container tab-pane fade"><br>
+      <h3>Laravel Video</h3>
+     
+
+<div class="row text-center mb-2">
+  	<div class="col-lg-4 col-md-4 col-12"> 
+<div class="card">
+  <img class="card-img-top" src="images/laravel.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">How to display current Date and Time on Label on window form in c#</h4>
+    <p class="card-text"> In this video show you how to display current date and time in Laravel.</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+  	</div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/laravel.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Accept Number in Text Box in C#</h4>
+    <p class="card-text"> In this video I am show you text box validation in Laravel. Enter Number only in text Box.
+Thank you for watching...............</p>
+    <a href="" class="btn btn-primary">Watch Video</a>
+  </div>
+</div> </div>
+  	<div class="col-lg-4 col-md-4 col-12">
+  	<div class="card">
+  <img class="card-img-top" src="images/laravel.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Enter Number Less Then 100 int Text Box C#</h4>
+    <p class="card-text"> in this video I am show you text Box validation. Enter only less than 100 number  in Laravel</p>
+    <a href="#" class="btn btn-primary">Watch Video</a>
+  </div>
+</div>
+ </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<br>
+<hr>
+<section>
+  <div class="container-fluid">
+    <div class="col-lg-12 col-md-12 col-12 bg-success">
+      <div class="text-center">
+        design by:swap tech learning  <br>
+        &copy; All Right reserve
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
