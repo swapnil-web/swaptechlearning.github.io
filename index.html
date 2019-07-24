@@ -16,6 +16,66 @@
 		}
 	</style>
    <style>
+
+/* popup message */
+
+
+.mainpanel
+{
+  background-color:skyblue;
+  width: 800px;
+  font-size: 20px;
+    padding: 10px 0 15px 40px;
+    cursor: pointer;
+}
+#plus
+{
+ float:right;
+ color: brown;
+
+}
+.panel
+{
+  display: none;
+  background-color: silver;
+  color: black;
+  font-family: time-new-roaman;
+  font-size: 20px;
+  width: 800px;
+  padding: 10px 0 15px 20px;
+  
+  
+  
+}
+
+#mainpopup
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+     z-index: 1001;
+     display: none;
+
+}
+
+#popup
+{
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+}
+
+#emailid
+{
+  border-radius: 20px;
+  padding: 5px;
+}
+
   /* Make the image fully responsive */
   .carousel-inner img {
       width: 100%;
@@ -330,7 +390,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 <section id="marque">
   <div class="container-fluid">
 
-    <marquee onmouseover="this.stop();" onmouseout="this.start();"><h2>Swap Tech Larning...</h2></marquee>
+    <marquee onmouseover="this.stop();" onmouseout="this.start();"><h2>Swap Tech Learning...</h2></marquee>
   </div>
 </section>
 
@@ -485,7 +545,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-<script>
+
+
   <!-- popup code -->
 
 <script>
@@ -509,7 +570,6 @@ function sub()
     document.getElementById('mainpopup').style.display="none";
 }
 
-</script>
 </script>
 </body>
 </html>
