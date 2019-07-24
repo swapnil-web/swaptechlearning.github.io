@@ -485,5 +485,31 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+<script>
+  <!-- popup code -->
+
+<script>
+  $(document).ready(function()
+  {
+    setTimeout(function()
+      {
+        $('#mainpopup').css('display','block');
+      },5000);
+  })
+
+  $('#can').click(function()
+  {
+    $('#mainpopup').css('display','none');
+  })
+
+function sub()
+{
+    var a = document.getElementById("emailid").value;
+    alert(a);
+    document.getElementById('mainpopup').style.display="none";
+}
+
+</script>
+</script>
 </body>
 </html>
