@@ -5,6 +5,7 @@
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="icon" type="image/icon" href="images/reg.ico">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="swap.css">
 	<style type="text/css">
 		
 		*
@@ -280,7 +281,16 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 
 </head>
 <body>
-	
+	<div id="mainpopup">
+  <div id="popup">
+    <h1 id="heading">Subscribe News Latter</h1>
+    <input type="text" class="form-control" name="email" id="emailid" placeholder="Enter Email Address" required=""><br>
+    <br>
+    <button type="submit" id="sub" onclick="sub();"  class="btn btn-primary">Submit</button>
+    <button type="submit" id="can" class="btn btn-primary">Cancel</button>
+  </div>
+
+</div>
 
  <div id="demo" class="carousel slide" data-ride="carousel">
 
